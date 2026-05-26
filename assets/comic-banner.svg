@@ -1,0 +1,97 @@
+<svg width="1600" height="760" viewBox="0 0 1600 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#020617"/>
+      <stop offset="0.45" stop-color="#071B33"/>
+      <stop offset="1" stop-color="#0B1120"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7DD3FC"/>
+      <stop offset="0.5" stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#0EA5E9"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.45" stop-color="#DFF6FF"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="2" fill="#38BDF8" opacity="0.25"/>
+      <circle cx="16" cy="14" r="1.6" fill="#FFFFFF" opacity="0.12"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="760" fill="url(#bg)"/>
+  <rect width="1600" height="760" fill="url(#dots)" opacity="0.72"/>
+
+  <!-- dynamic diagonal shapes -->
+  <path d="M-40 650 L480 60 L600 60 L80 760 Z" fill="#0EA5E9" opacity="0.09"/>
+  <path d="M1000 -40 L1640 -40 L1260 760 L980 760 Z" fill="#38BDF8" opacity="0.08"/>
+  <path d="M0 0 L520 0 L460 74 L0 140 Z" fill="#0EA5E9" opacity="0.18"/>
+  <path d="M1080 0 L1600 0 L1600 128 L1180 82 Z" fill="#0EA5E9" opacity="0.17"/>
+
+  <!-- comic bursts -->
+  <g filter="url(#glow)">
+    <path d="M1350 94 L1390 44 L1402 106 L1462 70 L1430 128 L1494 140 L1430 160 L1460 222 L1402 184 L1388 248 L1348 196 L1298 238 L1320 174 L1254 160 L1318 128 L1288 72 Z" fill="#020617" stroke="#38BDF8" stroke-width="6"/>
+    <text x="1374" y="148" text-anchor="middle" fill="#38BDF8" font-family="Impact, Arial Black, sans-serif" font-size="44" transform="rotate(-6 1374 148)">CODE!</text>
+  </g>
+  <g>
+    <path d="M1340 305 L1384 260 L1396 319 L1460 288 L1424 340 L1484 360 L1418 374 L1440 432 L1388 392 L1346 442 L1328 382 L1260 392 L1308 352 L1266 302 L1326 318 Z" fill="#0B1120" stroke="#FFFFFF" stroke-width="5" opacity="0.95"/>
+    <text x="1372" y="363" text-anchor="middle" fill="#FFFFFF" font-family="Impact, Arial Black, sans-serif" font-size="42" transform="rotate(-8 1372 363)">BUILD!</text>
+  </g>
+
+  <!-- left avatar / developer silhouette -->
+  <g transform="translate(70 105)" filter="url(#shadow)">
+    <path d="M110 310 C95 245 120 182 178 150 C225 124 290 132 334 170 C382 212 394 282 372 332 L110 310Z" fill="#0F172A" stroke="#38BDF8" stroke-width="5"/>
+    <circle cx="235" cy="105" r="68" fill="#D6A181" stroke="#020617" stroke-width="6"/>
+    <path d="M170 82 C202 18 290 34 326 74 C288 62 252 78 226 58 C220 84 198 100 170 82Z" fill="#020617"/>
+    <path d="M170 85 C196 30 276 34 318 72 C276 52 240 70 214 48 C211 78 192 95 170 85Z" fill="#0A0F1C"/>
+    <rect x="80" y="300" width="335" height="190" rx="18" fill="#111827" stroke="#E5E7EB" stroke-width="5"/>
+    <rect x="104" y="322" width="287" height="129" rx="12" fill="#020617" stroke="#334155" stroke-width="3"/>
+    <text x="145" y="384" fill="#FACC15" font-family="Arial Black, sans-serif" font-size="42">JS</text>
+    <text x="226" y="386" fill="#38BDF8" font-family="Arial Black, sans-serif" font-size="54">⚛</text>
+    <text x="298" y="385" fill="#FFFFFF" font-family="Arial Black, sans-serif" font-size="28">NEXT</text>
+    <text x="110" y="258" fill="#38BDF8" font-family="JetBrains Mono, monospace" font-size="48" opacity="0.88">&lt;/&gt;</text>
+  </g>
+
+  <!-- hero title -->
+  <g filter="url(#shadow)">
+    <text x="870" y="238" text-anchor="middle" fill="#020617" stroke="#FFFFFF" stroke-width="18" font-family="Impact, Arial Black, sans-serif" font-size="138" letter-spacing="4" transform="skewX(-10)">AFRIZAL</text>
+    <text x="870" y="366" text-anchor="middle" fill="#020617" stroke="#FFFFFF" stroke-width="18" font-family="Impact, Arial Black, sans-serif" font-size="138" letter-spacing="4" transform="skewX(-10)">NOER</text>
+    <text x="870" y="238" text-anchor="middle" fill="url(#metal)" stroke="#020617" stroke-width="4" font-family="Impact, Arial Black, sans-serif" font-size="138" letter-spacing="4" transform="skewX(-10)">AFRIZAL</text>
+    <text x="870" y="366" text-anchor="middle" fill="url(#metal)" stroke="#020617" stroke-width="4" font-family="Impact, Arial Black, sans-serif" font-size="138" letter-spacing="4" transform="skewX(-10)">NOER</text>
+  </g>
+
+  <!-- subtitle ribbon -->
+  <g filter="url(#shadow)">
+    <path d="M610 405 L1160 405 L1130 465 L580 465 Z" fill="#0EA5E9" stroke="#020617" stroke-width="6"/>
+    <text x="870" y="444" text-anchor="middle" fill="#FFFFFF" font-family="Arial Black, sans-serif" font-size="28" letter-spacing="1">WEB DEVELOPER • UI/UX DESIGNER • INFORMATICS STUDENT</text>
+  </g>
+
+  <!-- speech bubble -->
+  <g filter="url(#shadow)">
+    <path d="M560 515 L1200 515 L1160 650 L610 650 L560 595 Z" fill="#F8FAFC" stroke="#020617" stroke-width="7"/>
+    <path d="M610 650 L540 710 L590 635 Z" fill="#F8FAFC" stroke="#020617" stroke-width="7"/>
+    <text x="620" y="558" fill="#020617" font-family="JetBrains Mono, Consolas, monospace" font-size="28" font-weight="700">Hi, I'm Afrizal Noer.</text>
+    <text x="620" y="600" fill="#0F172A" font-family="JetBrains Mono, Consolas, monospace" font-size="23">Building clean websites, sharp interfaces,</text>
+    <text x="620" y="635" fill="#0F172A" font-family="JetBrains Mono, Consolas, monospace" font-size="23">and smart digital systems.</text>
+  </g>
+
+  <!-- bottom slogan -->
+  <path d="M90 710 L1510 710 L1470 744 L130 744 Z" fill="#F8FAFC" stroke="#020617" stroke-width="6"/>
+  <text x="800" y="735" text-anchor="middle" fill="#020617" font-family="Impact, Arial Black, sans-serif" font-size="26" letter-spacing="2">CODE WITH PASSION. DESIGN WITH PURPOSE. BUILD THE FUTURE.</text>
+
+  <!-- lightning accents -->
+  <path d="M520 36 L470 146 L540 128 L500 245 L610 88 L535 112 Z" fill="#38BDF8" opacity="0.9"/>
+  <path d="M1210 518 L1170 604 L1230 586 L1198 675 L1282 542 L1230 560 Z" fill="#38BDF8" opacity="0.8"/>
+</svg>
